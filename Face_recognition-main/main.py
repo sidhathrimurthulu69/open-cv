@@ -1,9 +1,7 @@
 import cv2
 import streamlit as st
 
-camera_index = 0
-
-vc = cv2.VideoCapture(camera_index)
+vc = cv2.VideoCapture(0)
 detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
 
 st.title("Webcam Face Recognition")
