@@ -2,7 +2,7 @@ import cv2
 import streamlit as st
 
 vc = cv2.VideoCapture(0)
-detector = cv2.CascadeClassifier("haarcascade_frontalface_default.xml")
+detector = cv2.CascadeClassifier(r"haarcascade_frontalface_default.xml")
 
 st.title("Webcam Face Recognition")
 FRAME_WINDOW = st.image([])
